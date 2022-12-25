@@ -10,7 +10,7 @@ public class AudioManager : MonoBehaviour
     public Slider slider;
     public int saveVolume;
     public AudioClip clickButtonSfx, attackSfx, shieldSfx, fireSfx, healSfx;
-
+    public bool story;
     private void Awake()
     {
         instance = this;
@@ -19,7 +19,12 @@ public class AudioManager : MonoBehaviour
     {
         saveVolume = PlayerPrefs.GetInt("Volume");
         audioSource.volume = (float)saveVolume / 5;
-        slider.value = (float)saveVolume;
+        if (!story)
+        {
+            slider.value = (float)saveVolume;
+        }
+
+
     }
 
     public void OnValueChanged()

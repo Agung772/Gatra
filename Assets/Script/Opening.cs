@@ -13,7 +13,7 @@ public class Opening : MonoBehaviour
 
         if (story)
         {
-            yield return new WaitForSeconds(19);
+            yield return new WaitForSeconds(42);
             GameManager.instance.StartTransisi();
             yield return new WaitForSeconds(2f);
             SceneManager.LoadScene("PilihCard");

@@ -679,7 +679,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088023611}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 7c305056605f1d14c8eedf8f3490a386, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: aa650380e906a674c8dc5e9448e0155b, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -5280,7 +5280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &3101211347611616222
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5503,14 +5503,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 5210111559696858919}
-  handle: {fileID: 3605261764376374980}
-  barVolume: {fileID: 3822989280455869037}
+  slider: {fileID: 0}
   saveVolume: 0
   clickButtonSfx: {fileID: 8300000, guid: 9d85cd880e4859748b5f8e234f95fe27, type: 3}
   attackSfx: {fileID: 8300000, guid: 1f15e86d2e337d4458cd7532aa07590f, type: 3}
   shieldSfx: {fileID: 8300000, guid: 98b76bc20e5809148bcd4f4b155c51ca, type: 3}
   fireSfx: {fileID: 8300000, guid: ba816f64fa7086645a70d5241e033ed3, type: 3}
   healSfx: {fileID: 8300000, guid: 8d14ee3450d68504fbfc28b900bc0d37, type: 3}
+  story: 1
 --- !u!222 &3181310092332882908
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10903,6 +10903,8 @@ MonoBehaviour:
   tutorUI: {fileID: 0}
   victoryUI: {fileID: 0}
   defeatUI: {fileID: 0}
+  particleVic: {fileID: 0}
+  particleDef: {fileID: 0}
   fondAsset: {fileID: 5915166451723454911}
   optionsScript: {fileID: 5646017593080069010}
   battleSkillManager: {fileID: 7838604942814352436}
@@ -12084,6 +12086,7 @@ MonoBehaviour:
   - {fileID: 8391959717912999528, guid: 729a14caa9fb82844ab69703e36f1572, type: 3}
   skillCount: 0
   skillChield: []
+  sisaSkill: []
 --- !u!224 &7851628526928739238
 RectTransform:
   m_ObjectHideFlags: 0
